@@ -68,16 +68,16 @@ function Index() {
 
           <div className="landing-nav-links">
             {navLinks.map((link) => (
-              <Link key={link.to} to={link.to}>
+              <a key={link.href} href={link.href}>
                 {link.label}
-              </Link>
+              </a>
             ))}
           </div>
 
           <div className="landing-nav-cta">
-            <Link to="/#pricing" className="landing-btn landing-btn-ghost hidden sm:inline-flex">
+            <a href="#pricing" className="landing-btn landing-btn-ghost hidden sm:inline-flex">
               See pricing
-            </Link>
+            </a>
             <a
               href="mailto:hello@lelocreations.co.za?subject=IT%20Support%20Request"
               className="landing-btn landing-btn-primary"
@@ -97,13 +97,13 @@ function Index() {
 
         <div className={`landing-mobile-menu ${mobileOpen ? "open" : ""}`}>
           {navLinks.map((link) => (
-            <Link key={link.to} to={link.to} onClick={() => setMobileOpen(false)}>
+            <a key={link.href} href={link.href} onClick={() => setMobileOpen(false)}>
               {link.label}
-            </Link>
+            </a>
           ))}
-          <Link to="/#pricing" onClick={() => setMobileOpen(false)}>
+          <a href="#pricing" className="landing-btn landing-btn-primary" onClick={() => setMobileOpen(false)}>
             Book an appointment
-          </Link>
+          </a>
         </div>
       </header>
 
@@ -129,9 +129,9 @@ function Index() {
                   Book an appointment
                   <ChevronRight size={16} />
                 </a>
-                <Link to="/#how-it-works" className="landing-btn landing-btn-ghost">
+                <a href="#how-it-works" className="landing-btn landing-btn-ghost">
                   See how it works
-                </Link>
+                </a>
               </div>
               <div className="landing-hero-trust">
                 <div>
@@ -415,13 +415,13 @@ function Index() {
             </div>
             <div className="landing-foot-col">
               <h4>Product</h4>
-              <Link to="/#how-it-works">How it works</Link>
-              <Link to="/#features">Features</Link>
-              <Link to="/#pricing">Pricing</Link>
+              <a href="#how-it-works">How it works</a>
+              <a href="#features">Features</a>
+              <a href="#pricing">Pricing</a>
             </div>
             <div className="landing-foot-col">
               <h4>Company</h4>
-              <Link to="/#services">Services</Link>
+              <a href="#services">Services</a>
               <a href="mailto:hello@lelocreations.co.za">Contact</a>
             </div>
             <div className="landing-foot-col">
