@@ -502,12 +502,9 @@ function PricingCard({
         {price} <span>/ mo</span>
       </div>
       <div className="landing-price-desc">{description}</div>
-      <ul className="landing-price-list">
+        <ul className="landing-price-list">
         {features.map((feature) => (
-          <li key={feature}>
-            <Check size={16} />
-            {feature}
-          </li>
+          <li key={feature}>{feature}</li>
         ))}
       </ul>
       <a
