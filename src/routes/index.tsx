@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
   Bot,
   CalendarDays,
-  Check,
   ChevronRight,
   FileText,
   LayoutDashboard,
