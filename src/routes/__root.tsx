@@ -78,10 +78,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Lelo's Creation" },
-      { name: "description", content: "IT Helpdesk in a Box — AI-powered support and appointment booking for small businesses." },
+      {
+        name: "description",
+        content:
+          "IT Helpdesk in a Box — AI-powered support and appointment booking for small businesses.",
+      },
       { name: "author", content: "Lelo's Creation" },
       { property: "og:title", content: "Lelo's Creation" },
-      { property: "og:description", content: "IT Helpdesk in a Box — AI-powered support and appointment booking for small businesses." },
+      {
+        property: "og:description",
+        content:
+          "IT Helpdesk in a Box — AI-powered support and appointment booking for small businesses.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@lelocreations" },

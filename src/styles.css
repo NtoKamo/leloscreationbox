@@ -156,7 +156,12 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family:
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
     line-height: 1.5;
   }
 
@@ -231,7 +236,10 @@
   font-size: 14px;
   font-weight: 700;
   border: none;
-  transition: opacity 150ms ease, border-color 150ms ease, background-color 150ms ease;
+  transition:
+    opacity 150ms ease,
+    border-color 150ms ease,
+    background-color 150ms ease;
 }
 
 .landing-btn-primary {

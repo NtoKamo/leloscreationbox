@@ -100,7 +100,11 @@ function Index() {
               {link.label}
             </a>
           ))}
-          <a href="#pricing" className="landing-btn landing-btn-primary" onClick={() => setMobileOpen(false)}>
+          <a
+            href="#pricing"
+            className="landing-btn landing-btn-primary"
+            onClick={() => setMobileOpen(false)}
+          >
             Book an appointment
           </a>
         </div>
@@ -156,9 +160,7 @@ function Index() {
                 <span className="landing-mock-title">lelo-assistant.chat</span>
               </div>
               <div className="landing-mock-chat">
-                <div className="landing-mock-bubble user">
-                  Hi, our office WiFi keeps dropping
-                </div>
+                <div className="landing-mock-bubble user">Hi, our office WiFi keeps dropping</div>
                 <div className="landing-mock-bubble ai">
                   Sorry to hear that! Is this happening all day or at certain times? And would you
                   prefer an on-site visit or remote diagnosis?
@@ -215,8 +217,8 @@ function Index() {
               <div className="landing-step-num">02 / Plan</div>
               <h3 className="landing-h3">AI plans the visit</h3>
               <p>
-                The assistant asks the right follow-up questions, picks a visit type, and hands
-                off a structured task plan to the technician.
+                The assistant asks the right follow-up questions, picks a visit type, and hands off
+                a structured task plan to the technician.
               </p>
             </div>
             <div className="landing-step-card">
@@ -281,7 +283,9 @@ function Index() {
         <div className="landing-wrap">
           <div className="landing-sec-head">
             <p className="landing-eyebrow">What we fix</p>
-            <h2 className="landing-h2">IT support built for businesses without an IT department.</h2>
+            <h2 className="landing-h2">
+              IT support built for businesses without an IT department.
+            </h2>
           </div>
           <div className="landing-services">
             <ServiceCard
@@ -410,7 +414,10 @@ function Index() {
                 <span className="landing-brand-box">LC</span>
                 <span className="landing-brand-text">Lelo's Creation</span>
               </Link>
-              <p>IT Helpdesk in a Box — AI-powered support and appointment booking for small businesses.</p>
+              <p>
+                IT Helpdesk in a Box — AI-powered support and appointment booking for small
+                businesses.
+              </p>
             </div>
             <div className="landing-foot-col">
               <h4>Product</h4>
@@ -426,7 +433,9 @@ function Index() {
             <div className="landing-foot-col">
               <h4>Get in touch</h4>
               <a href="mailto:hello@lelocreations.co.za">hello@lelocreations.co.za</a>
-              <a href="mailto:hello@lelocreations.co.za?subject=IT%20Support%20Request">Chat with us</a>
+              <a href="mailto:hello@lelocreations.co.za?subject=IT%20Support%20Request">
+                Chat with us
+              </a>
             </div>
           </div>
           <div className="landing-foot-bottom">
@@ -501,7 +510,7 @@ function PricingCard({
         {price} <span>/ mo</span>
       </div>
       <div className="landing-price-desc">{description}</div>
-        <ul className="landing-price-list">
+      <ul className="landing-price-list">
         {features.map((feature) => (
           <li key={feature}>{feature}</li>
         ))}
