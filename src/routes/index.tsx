@@ -47,10 +47,10 @@ function Index() {
   const currentYear = new Date().getFullYear();
 
   const navLinks = [
-    { to: "/#how-it-works", label: "How it works" },
-    { to: "/#features", label: "Features" },
-    { to: "/#services", label: "Services" },
-    { to: "/#pricing", label: "Pricing" },
+    { href: "#how-it-works", label: "How it works" },
+    { href: "#features", label: "Features" },
+    { href: "#services", label: "Services" },
+    { href: "#pricing", label: "Pricing" },
   ];
 
   return (
