@@ -1,29 +1,100 @@
-# Welcome to your Lovable project
+# Lelo's Creation — IT Helpdesk in a Box
 
-This project was built with [Lovable](https://lovable.dev).
+A modern, dark-themed landing page for **Lelo's Creation**, an all-in-one IT helpdesk service for small businesses. Built with TanStack Start, React 19, and Tailwind CSS v4.
 
-## Build with Lovable
+**Live site:** [leloscreationbox.lovable.app](https://leloscreationbox.lovable.app)
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+---
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+## Features
 
-## Development
+- **Responsive single-page landing** with smooth-scroll anchor navigation
+- **Dark teal design system** with custom OKLCH theme tokens
+- **Feature showcase** highlighting AI-powered ticketing, email support, and live chat
+- **Pricing cards** with three tiers (Starter, Business, Enterprise)
+- **"How it works" section** explaining the 3-step onboarding flow
+- **Pre-filled booking actions** — email CTAs that open with a ready-made subject line
+- **Mobile menu** with collapsible navigation
+- **SEO-optimized** — per-route `head()` metadata, Open Graph, and Twitter cards
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Tech Stack
+
+| Layer       | Technology                                             |
+| ----------- | ------------------------------------------------------ |
+| Framework   | [TanStack Start](https://tanstack.com/start) v1 (React 19, SSR/SSG) |
+| Build tool  | [Vite](https://vitejs.dev/) v8                         |
+| Styling     | [Tailwind CSS](https://tailwindcss.com/) v4            |
+| Icons       | [lucide-react](https://lucide.dev/)                    |
+| Fonts       | Inter (body) + JetBrains Mono (code/accents)          |
+| Language    | TypeScript                                              |
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) 20+ (or [install via nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
+- [Bun](https://bun.sh/) (recommended) or npm
+
+### Installation
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+git clone <repository-url>
+cd lelos-creation
+npm install
+```
+
+### Development
+
+```sh
 npm run dev
 ```
 
-## Built with
+The dev server starts on `http://localhost:8080`.
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+### Build
+
+```sh
+npm run build          # production build
+npm run build:dev     # development build (mode=development)
+npm run preview       # preview the production build locally
+```
+
+### Lint & Format
+
+```sh
+npm run lint
+npm run format
+```
+
+## Project Structure
+
+```
+src/
+├── routes/
+│   ├── __root.tsx       # App shell — fonts, global metadata, <Outlet />
+│   └── index.tsx        # Landing page (hero, features, pricing, CTA, footer)
+├── styles.css           # Theme tokens + component styles
+├── lib/                 # Shared utilities
+├── hooks/               # Custom React hooks
+└── components/          # shadcn/ui components
+```
+
+## Design Tokens
+
+The theme is defined in `src/styles.css` using CSS custom properties (OKLCH). Key colors:
+
+| Token            | Hex       | Usage                        |
+| ---------------- | --------- | ---------------------------- |
+| Background       | `#0B0F17` | App background               |
+| Surface          | `#111726` | Cards, panels                |
+| Primary          | `#4FD1C5` | Accents, CTA buttons, links  |
+| Primary Foreground | `#0B0F17` | Text on primary surfaces    |
+| Foreground       | `#E2E8F0` | Body text                    |
+
+## Deployment
+
+This project deploys automatically via [Lovable](https://lovable.dev). Connect a GitHub repository for two-way sync, or download the codebase and deploy to any Node-compatible host.
+
+## License
+
+All rights reserved © Lelo's Creation.
